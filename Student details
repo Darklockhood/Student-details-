@@ -1,0 +1,27 @@
+```java
+public class Student {
+    private String registrationNumber;
+    private String name;
+    private String course;
+    private String dateOfBirth;
+
+    public Student(String registrationNumber, String name, String course, String dateOfBirth) {
+        this.registrationNumber = registrationNumber;
+        this.name = name;
+        this.course = course;
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public void printDetails() {
+        System.out.println("Registration Number: " + registrationNumber);
+        System.out.println("Name: " + name);
+        System.out.println("Course: " + course);
+        System.out.println("Date of Birth: " + dateOfBirth);
+    }
+
+    public static void main(String[] args) {
+        Student student = new Student("19/07026", "Christopher Joseph", "Diploma in Information Technology", "23/3/2002");
+        student.printDetails();
+    }
+}
+```
